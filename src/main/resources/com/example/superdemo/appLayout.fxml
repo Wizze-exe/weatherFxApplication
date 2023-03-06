@@ -13,6 +13,7 @@
 <?import javafx.scene.effect.Lighting?>
 <?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -44,45 +45,81 @@
                                              </light>
                                           </Lighting>
                                        </effect></Separator>
-                                    <Label fx:id="tempLabelYa" layoutX="136.0" layoutY="43.0" text="~">
+                                    <Label fx:id="tempLabelYa" alignment="CENTER" layoutY="43.0" prefHeight="54.0" prefWidth="297.0" text="~">
                                        <font>
                                           <Font size="36.0" />
                                        </font>
                                     </Label>
                                     <VBox layoutY="97.0" prefHeight="248.0" prefWidth="300.0">
                                        <children>
-                                          <Label fx:id="yaFeelsLike" prefHeight="62.0" prefWidth="300.0" text="Ощущается как: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="yaWindSpeed" prefHeight="62.0" prefWidth="300.0" text="Скорость ветра: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="yaHumidity" prefHeight="62.0" prefWidth="300.0" text="Влажность: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="yaPressure" prefHeight="62.0" prefWidth="300.0" text="Давление: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label graphicTextGap="0.0" prefHeight="62.0" prefWidth="147.0" text="Ощущается как: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="yaFeelsLike" prefHeight="62.0" prefWidth="153.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="150.0" text="Скорость ветра: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="yaWindSpeed" prefHeight="62.0" prefWidth="150.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="110.0" text="Влажность: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="yaHumidity" prefHeight="62.0" prefWidth="190.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="103.0" text="Давление: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="yaPressure" prefHeight="62.0" prefWidth="197.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
                                        </children>
                                     </VBox>
                                  </children></AnchorPane>
@@ -104,45 +141,81 @@
                                           <Font size="24.0" />
                                        </font>
                                     </Label>
-                                    <Label fx:id="tempLabelAc" layoutX="136.0" layoutY="43.0" text="~">
+                                    <Label fx:id="tempLabelAc" alignment="CENTER" layoutY="43.0" prefHeight="54.0" prefWidth="297.0" text="~">
                                        <font>
                                           <Font size="36.0" />
                                        </font>
                                     </Label>
                                     <VBox layoutY="97.0" prefHeight="248.0" prefWidth="300.0">
                                        <children>
-                                          <Label fx:id="acFeelsLike" prefHeight="62.0" prefWidth="300.0" text="Ощущается как: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="acWindSpeed" prefHeight="62.0" prefWidth="300.0" text="Скорость ветра: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="acHumidity" prefHeight="62.0" prefWidth="300.0" text="Влажность: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
-                                          <Label fx:id="acPressure" prefHeight="62.0" prefWidth="300.0" text="Давление: ">
-                                             <padding>
-                                                <Insets left="10.0" />
-                                             </padding>
-                                             <font>
-                                                <Font size="18.0" />
-                                             </font>
-                                          </Label>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="147.0" text="Ощущается как: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="acFeelsLike" prefHeight="62.0" prefWidth="153.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="150.0" text="Скорость ветра: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="acWindSpeed" prefHeight="62.0" prefWidth="150.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="110.0" text="Влажность: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="acHumidity" prefHeight="62.0" prefWidth="190.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
+                                          <HBox prefHeight="62.0" prefWidth="300.0">
+                                             <children>
+                                                <Label prefHeight="62.0" prefWidth="103.0" text="Давление: ">
+                                                   <padding>
+                                                      <Insets left="10.0" />
+                                                   </padding>
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <Label fx:id="acPressure" prefHeight="62.0" prefWidth="197.0">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                             </children>
+                                          </HBox>
                                        </children>
                                     </VBox>
                                  </children></AnchorPane>
@@ -164,11 +237,14 @@
       <Separator layoutX="10.0" layoutY="384.0" prefWidth="200.0" />
       <ButtonBar prefHeight="30.0" prefWidth="600.0">
         <buttons>
-          <Button fx:id="reloadButton" mnemonicParsing="false" onAction="#onReloadButtonClick" prefHeight="26.0" scaleX="0.95" scaleY="0.9" style="-fx-border-color: silver; -fx-border-radius: 60; -fx-background-radius: 60;" text="Reload">
+          <Button fx:id="reloadButton" mnemonicParsing="false" onAction="#onReloadButtonClick" prefHeight="26.0" style="-fx-border-color: silver; -fx-border-radius: 60; -fx-background-radius: 60;" text="Reload">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets></Button>
         </buttons>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
       </ButtonBar>
    </children>
 </VBox>

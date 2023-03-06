@@ -16,22 +16,21 @@ public class WeatherController {
 	public Label acWindSpeed;
 	public Label acHumidity;
 	public Label acPressure;
+	Parser parser = new Parser();
 	
 	@FXML
 	protected void onReloadButtonClick() throws IOException {
-		Parser parser = new Parser();
-		
 		parser.updateWeatherInfo();
 		
+		//- −
 		tempLabelYa.setText(parser.getYandexWeather()[0] + "°C");
-		tempLabelYa.setLayoutX(100);
-		yaFeelsLike.setText(yaFeelsLike.getText() + parser.getYandexWeather()[1]);
-		yaWindSpeed.setText(yaWindSpeed.getText() + parser.getYandexWeather()[2]);
-		yaHumidity.setText(yaHumidity.getText() + parser.getYandexWeather()[3]);
-		yaPressure.setText(yaPressure.getText() + parser.getYandexWeather()[4]);
+		yaFeelsLike.setText(parser.getYandexWeather()[1] + "°");
+		yaWindSpeed.setText(parser.getYandexWeather()[2]);
+		yaHumidity.setText(parser.getYandexWeather()[3]);
+		yaPressure.setText(parser.getYandexWeather()[4]);
 		
-		tempLabelAc.setText(parser.getAccuWeather()[0] + "C");
-
+		tempLabelAc.setText(parser.getAccuWeather()[0]);
+		acFeelsLike.setText(parser.getAccuWeather()[1]);
 		
 	}
 }
