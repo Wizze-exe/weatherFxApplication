@@ -30,7 +30,7 @@ public class AppPreloader extends Preloader {
 		primaryStage.show();
 		
 		Parser parser = new Parser();
-		parser.updateWeatherInfo();
+		parser.updateSiteInfo();
 	}
 	
 	@Override
